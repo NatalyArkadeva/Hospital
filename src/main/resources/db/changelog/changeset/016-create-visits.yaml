@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-visits
+      author: Nataly
+      changes:
+        - createTable:
+            tableName: visits
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: description
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: recipe
+                  type: text
+                  constraints:
+                    nullable: true
+              - column:
+                  name: record_id
+                  type: bigint
+                  constraints:
+                    foreignKeyName: fk_visits_records
+                    referencedTableName: records
+                    referencedColumnNames: id
+                    nullable: false

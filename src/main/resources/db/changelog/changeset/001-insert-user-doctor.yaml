@@ -1,0 +1,77 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-user-doctor
+      author: Nataly
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  value: -3
+              - column:
+                  name: name
+                  value: Михаил
+              - column:
+                  name: surname
+                  value: Пупкин
+              - column:
+                  name: patronymic
+                  value: null
+              - column:
+                  name: birthday
+                  value: 2005-10-21
+              - column:
+                  name: phone_number
+                  value: 8-917-025-45-87
+              - column:
+                  name: email
+                  value: qwerty1@rty.ru
+              - column:
+                  name: department_id
+                  value: -1
+              - column:
+                  name: position
+                  value: THERAPIST
+              - column:
+                  name: doctor_description
+                  value: some description
+              - column:
+                  name: role
+                  value: DOCTOR
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  value: -4
+              - column:
+                  name: name
+                  value: Петр
+              - column:
+                  name: surname
+                  value: Федоров
+              - column:
+                  name: patronymic
+                  value: Геннадьевич
+              - column:
+                  name: birthday
+                  value: 1981-02-18
+              - column:
+                  name: phone_number
+                  value: 8-927-878-96-32
+              - column:
+                  name: email
+                  value: zxc2@rty.ru
+              - column:
+                  name: department_id
+                  value: -2
+              - column:
+                  name: position
+                  value: NEUROLOGIST
+              - column:
+                  name: doctor_description
+                  value: some description
+              - column:
+                  name: role
+                  value: DOCTOR

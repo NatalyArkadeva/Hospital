@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-price-list
+      author: Nataly
+      changes:
+        - insert:
+            tableName: price_list
+            columns:
+              - column:
+                  name: id
+                  value: -1
+              - column:
+                  name: title
+                  value: medical screening
+              - column:
+                  name: price
+                  value: 1000.00
+        - insert:
+            tableName: price_list
+            columns:
+              - column:
+                  name: id
+                  value: -2
+              - column:
+                  name: title
+                  value: new medical screening
+              - column:
+                  name: price
+                  value: 900.00
+        - insert:
+            tableName: price_list
+            columns:
+              - column:
+                  name: id
+                  value: -3
+              - column:
+                  name: title
+                  value: all medical screening
+              - column:
+                  name: price
+                  value: 1900.00

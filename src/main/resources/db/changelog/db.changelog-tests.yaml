@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/008-create-department.yaml
+  - include:
+      file: db/changelog/changeset/000-create-users.yaml
+  - include:
+      file: db/changelog/changeset/002-create-accounts.yaml
+  - include:
+      file: db/changelog/changeset/004-create-price-list.yaml
+  - include:
+      file: db/changelog/changeset/006-create-contracts.yaml
+  - include:
+      file: db/changelog/changeset/018-create-contract-price.yaml
+  - include:
+      file: db/changelog/changeset/010-create-time-table.yaml
+  - include:
+      file: db/changelog/changeset/012-create-records.yaml
+  - include:
+      file: db/changelog/changeset/016-create-visits.yaml
+  - include:
+      file: db/changelog/changeset/014-create-results.yaml

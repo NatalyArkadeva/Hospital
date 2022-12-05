@@ -1,0 +1,69 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-users
+      author: Nataly
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: surname
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: patronymic
+                  type: varchar(50)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: birthday
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: phone_number
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: email
+                  type: varchar(50)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: department_id
+                  type: bigint
+                  constraints:
+                    foreignKeyName: fk_users_departments
+                    referencedTableName: departments
+                    referencedColumnNames: id
+                    nullable: true
+              - column:
+                  name: position
+                  type: varchar(50)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: doctor_description
+                  type: text
+                  constraints:
+                    nullable: true
+              - column:
+                  name: role
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+

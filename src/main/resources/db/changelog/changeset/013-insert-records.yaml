@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-records
+      author: Nataly
+      changes:
+        - insert:
+            tableName: records
+            columns:
+              - column:
+                  name: id
+                  value: -1
+              - column:
+                  name: time_table_id
+                  value: -3
+              - column:
+                  name: user_id
+                  value: -5
+        - insert:
+            tableName: records
+            columns:
+              - column:
+                  name: id
+                  value: -2
+              - column:
+                  name: time_table_id
+                  value: -9
+              - column:
+                  name: user_id
+                  value: -6

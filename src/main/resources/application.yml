@@ -1,0 +1,35 @@
+server.port: 8080
+
+spring:
+  liquibase:
+    enabled: true
+  jpa:
+    database: POSTGRESQL
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:postgresql://localhost:5555/hospital
+    username: admin
+    password: admin
+    driverClassName: org.postgresql.Driver
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: qwerty@gmail.com
+    password: kcebjghuhltakeer
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+logging:
+  file.path: ./logs
+
+jwt:
+  header: Authorization
+  secret: proselyte
+  expiration: 604800

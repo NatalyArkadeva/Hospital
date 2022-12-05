@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-results
+      author: Nataly
+      changes:
+        - createTable:
+            tableName: results
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: date
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: result
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    foreignKeyName: fk_results_users
+                    referencedTableName: users
+                    referencedColumnNames: id
+                    nullable: false

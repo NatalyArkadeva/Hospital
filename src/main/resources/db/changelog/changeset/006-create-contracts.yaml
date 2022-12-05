@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-contracts
+      author: Nataly
+      changes:
+        - createTable:
+            tableName: contracts
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: date
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: number
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cost
+                  type: numeric(19,2)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    foreignKeyName: fk_contracts_users
+                    referencedTableName: users
+                    referencedColumnNames: id
+                    nullable: false

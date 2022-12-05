@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-time-table
+      author: Nataly
+      changes:
+        - createTable:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: date_time
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: office
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    foreignKeyName: fk_time_tables_users
+                    referencedTableName: users
+                    referencedColumnNames: id
+                    nullable: false

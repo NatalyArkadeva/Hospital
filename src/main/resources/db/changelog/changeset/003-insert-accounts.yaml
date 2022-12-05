@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-accounts
+      author: Nataly
+      changes:
+        - insert:
+            tableName: accounts
+            columns:
+              - column:
+                  name: id
+                  value: -1
+              - column:
+                  name: login
+                  value: admin
+              - column:
+                  name: password
+                  value: admin
+              - column:
+                  name: user_id
+                  value: -1
+        - insert:
+            tableName: accounts
+            columns:
+              - column:
+                  name: id
+                  value: -2
+              - column:
+                  name: login
+                  value: 123
+              - column:
+                  name: password
+                  value: 123
+              - column:
+                  name: user_id
+                  value: -3
+        - insert:
+            tableName: accounts
+            columns:
+              - column:
+                  name: id
+                  value: -3
+              - column:
+                  name: login
+                  value: qwerty
+              - column:
+                  name: password
+                  value: qwerty
+              - column:
+                  name: user_id
+                  value: -6

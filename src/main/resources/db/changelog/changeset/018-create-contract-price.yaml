@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-contract-price
+      author: Nataly
+      changes:
+        - createTable:
+            tableName: contract_price
+            columns:
+              - column:
+                  name: contract_id
+                  type: bigint
+                  constraints:
+                    foreignKeyName: fk_contract_price_contract
+                    referencedTableName: contracts
+                    referencedColumnNames: id
+                    nullable: false
+              - column:
+                  name: price_list_id
+                  type: bigint
+                  constraints:
+                    foreignKeyName: fk_contracts_price_list
+                    referencedTableName: price_list
+                    referencedColumnNames: id
+                    nullable: false

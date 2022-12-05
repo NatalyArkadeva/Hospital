@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-contract-price
+      author: Nataly
+      changes:
+        - insert:
+            tableName: contract_price
+            columns:
+              - column:
+                  name: contract_id
+                  value: -1
+              - column:
+                  name: price_list_id
+                  value: -1
+        - insert:
+            tableName: contract_price
+            columns:
+              - column:
+                  name: contract_id
+                  value: -2
+              - column:
+                  name: price_list_id
+                  value: -2
+        - insert:
+            tableName: contract_price
+            columns:
+              - column:
+                  name: contract_id
+                  value: -2
+              - column:
+                  name: price_list_id
+                  value: -3

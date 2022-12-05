@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-visits
+      author: Nataly
+      changes:
+        - insert:
+            tableName: visits
+            columns:
+              - column:
+                  name: id
+                  value: -1
+              - column:
+                  name: description
+                  value: visit description
+              - column:
+                  name: recipe
+                  value: recipe
+              - column:
+                  name: record_id
+                  value: -1
+        - insert:
+            tableName: visits
+            columns:
+              - column:
+                  name: id
+                  value: -2
+              - column:
+                  name: description
+                  value: new visit description
+              - column:
+                  name: recipe
+                  value: null
+              - column:
+                  name: record_id
+                  value: -2

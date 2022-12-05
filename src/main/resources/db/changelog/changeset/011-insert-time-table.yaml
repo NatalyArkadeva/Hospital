@@ -1,0 +1,257 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-time-table
+      author: Nataly
+      changes:
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -1
+              - column:
+                  name: date_time
+                  value: 2022-11-25 10:00:00
+              - column:
+                  name: office
+                  value: 22
+              - column:
+                  name: status
+                  value: FREE
+              - column:
+                  name: user_id
+                  value: -3
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -2
+              - column:
+                  name: date_time
+                  value: 2022-11-25 10:30:00
+              - column:
+                  name: office
+                  value: 22
+              - column:
+                  name: status
+                  value: FREE
+              - column:
+                  name: user_id
+                  value: -3
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -3
+              - column:
+                  name: date_time
+                  value: 2022-11-25 11:00:00
+              - column:
+                  name: office
+                  value: 22
+              - column:
+                  name: status
+                  value: RECORDED
+              - column:
+                  name: user_id
+                  value: -3
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -4
+              - column:
+                  name: date_time
+                  value: 2022-11-25 11:30:00
+              - column:
+                  name: office
+                  value: 22
+              - column:
+                  name: status
+                  value: FREE
+              - column:
+                  name: user_id
+                  value: -3
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -5
+              - column:
+                  name: date_time
+                  value: 2022-11-25 12:00:00
+              - column:
+                  name: office
+                  value: 22
+              - column:
+                  name: status
+                  value: FREE
+              - column:
+                  name: user_id
+                  value: -3
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -6
+              - column:
+                  name: date_time
+                  value: 2022-11-25 12:30:00
+              - column:
+                  name: office
+                  value: 22
+              - column:
+                  name: status
+                  value: FREE
+              - column:
+                  name: user_id
+                  value: -3
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -7
+              - column:
+                  name: date_time
+                  value: 2022-11-28 14:00:00
+              - column:
+                  name: office
+                  value: 32
+              - column:
+                  name: status
+                  value: FREE
+              - column:
+                  name: user_id
+                  value: -4
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -8
+              - column:
+                  name: date_time
+                  value: 2022-11-28 14:30:00
+              - column:
+                  name: office
+                  value: 32
+              - column:
+                  name: status
+                  value: FREE
+              - column:
+                  name: user_id
+                  value: -4
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -9
+              - column:
+                  name: date_time
+                  value: 2022-11-28 15:00:00
+              - column:
+                  name: office
+                  value: 32
+              - column:
+                  name: status
+                  value: RECORDED
+              - column:
+                  name: user_id
+                  value: -4
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -10
+              - column:
+                  name: date_time
+                  value: 2022-11-28 15:30:00
+              - column:
+                  name: office
+                  value: 32
+              - column:
+                  name: status
+                  value: FREE
+              - column:
+                  name: user_id
+                  value: -4
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -11
+              - column:
+                  name: date_time
+                  value: 2022-11-28 16:00:00
+              - column:
+                  name: office
+                  value: 32
+              - column:
+                  name: status
+                  value: FREE
+              - column:
+                  name: user_id
+                  value: -4
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -12
+              - column:
+                  name: date_time
+                  value: 2022-11-30 16:00:00
+              - column:
+                  name: office
+                  value: 32
+              - column:
+                  name: status
+                  value: FREE
+              - column:
+                  name: user_id
+                  value: -3
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -13
+              - column:
+                  name: date_time
+                  value: 2022-11-30 16:30:00
+              - column:
+                  name: office
+                  value: 32
+              - column:
+                  name: status
+                  value: RECORDED
+              - column:
+                  name: user_id
+                  value: -3
+        - insert:
+            tableName: time_tables
+            columns:
+              - column:
+                  name: id
+                  value: -14
+              - column:
+                  name: date_time
+                  value: 2022-11-30 17:00:00
+              - column:
+                  name: office
+                  value: 32
+              - column:
+                  name: status
+                  value: FREE
+              - column:
+                  name: user_id
+                  value: -3
